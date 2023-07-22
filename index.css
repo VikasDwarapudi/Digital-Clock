@@ -1,0 +1,397 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Manrope',sans-serif;
+}
+h2{
+    margin: 12px;
+    color: #8A11BF;
+}
+body{
+    background-color: #3D087B;
+}
+.main-container{
+    margin-left: 8%;
+    margin-right: 8%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    position: relative;
+}
+#grid-container1{
+    width: 45%;
+    height: 75vh;
+    display: grid;
+    grid-row-gap: 15px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 10% 50% 10% 10% 10% 10% 10% 10%;
+}
+.grid-container2{
+    width: 45%;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-row-gap: 30px;
+    grid-template-rows: 20% 95%;
+}
+#clock-pic{
+    background-image: url("./Images/clock_logo.png");
+    background-size: 100% 100%;
+    width: 90%;
+    background-repeat: no-repeat;
+    display: inline;
+}
+#left-second-container{
+    background-color: white;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    position: relative;
+    border-radius: 10px;
+}
+.left-second-container-inner{
+    width: 100%;
+    height: 25%;
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+}
+.left-second-container-options{
+    display: inline-block;
+    width: 80%;
+    height: 100%;
+    padding-top: 20px;
+    position: absolute;
+    
+}
+.TimeSelector{
+    width: 120px;
+    height: 25px;
+    border-radius: 3px;
+}
+label{
+    font-size: 25px;
+    align-items: end;
+}
+#set-alarm{
+    display: grid;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    text-align: center;
+    border-radius: 5px;
+    background-image: linear-gradient(113deg,#6E54EC,#CB52F8,#FC5EFF,#F1A7C5);
+    color: white;
+    align-items: center;
+}
+#set-time:hover{
+    background-image: linear-gradient(-113deg,#6E54EC,#CB52F8,#FC5EFF,#F1A7C5);
+}
+#message{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    color: white;
+    align-items: center;
+    background-color:  #8E53F0;
+    border-radius: 10px;
+    position: relative;
+}
+#digital-clock{
+    position: relative;
+    border-radius: 10px;
+    background-color: #EDEDED;
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+
+}
+#right-bottom-container{
+    position: relative;
+}
+#wakeUpTimeSelector{
+    margin-left: 60px;
+}
+#lunchTimeSelector{
+    margin-left: 90px;
+}
+#napTimeSelector{
+    margin-left: 103px;
+}
+#nightTimeSelector{
+    margin-left: 92px;
+}
+#alarm-container{
+    margin-left: 5px;
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    background-color:  #8E53F0;
+    border-radius: 5px;
+    /* opacity: 0.23; */
+}
+#text-container{
+    position: relative;
+    top: 0;
+    background-color: white;
+    padding-left: 5%;
+    padding-top: 5%;
+    width: 100%;
+    height: 20%;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 10px;
+    color: #8E53F0;
+    border-bottom: 10px solid #3D087B;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.grid-item1{
+    font-size: 35px;
+}
+#Image-container{
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    background-color: white;
+
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+}
+#div1{
+    background-color: white;
+    background-image: url('./Images/wake_up.jpg');
+    height: 100%;
+    width: 20%;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+#div2{
+    background-color: white;
+    background-image: url('./Images/lunch_time.jpg');
+    border-radius: 10px;
+    height: 100%;
+    width: 20%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+#div3{
+    background-color: white;
+    background-image: url('./Images/nap_time.jpg');
+    border-radius: 10px;
+    height: 100%;
+    width: 20%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+#div4{
+    background-color: white;
+    background-image: url('./Images/Screenshot\ 2023-04-27\ at\ 11.48.15\ AM.png');
+    border-radius: 10px;
+    height: 100%;
+    width: 20%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+#lb1{
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    top: 10px;
+    margin: auto;
+    opacity: 0.71;
+    z-index: -1;
+    border-radius: 10px;
+    background-color: white;
+}
+#lb2{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 20px;
+    margin: auto;
+    opacity: 0.21;
+
+    z-index: -2;
+    border-radius: 10px;
+    background-color: white;
+}
+#clock1{
+    height: 100%;
+    width: 15%;
+    float: left;
+    color: #3D087B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+#clock2{
+    background-color: #F6E2FF;
+    margin: 12px;
+    height: 70%;
+    width: 15%;
+    float: left;
+    color: violet;
+    align-items: center;
+    font-size: 15px;
+    padding-top: 5px;
+    text-align: center;
+}
+#clock3{
+    background-color: #F6E2FF;
+    margin: 12px;
+    height: 70%;
+    width: 15%;
+    float: left;
+    color: violet;
+    align-items: center;
+    font-size: 15px;
+    padding-top: 5px;
+    text-align: center;
+}
+#clock4{
+    background-color: #F6E2FF;
+    margin: 12px;
+    height: 70%;
+    width: 15%;
+    float: left;
+    color: violet;
+    align-items: center;
+    font-size: 15px;
+    padding-top: 5px;
+    text-align: center;
+}
+#clock5{
+    background-image: url('./Images/AM_svg.jpg');
+    background-size: 100% 70%;
+    background-repeat: no-repeat;
+    margin: 12px;
+    height: 100%;
+    width: 15%;
+    float: left;
+    color: violet;
+    align-items: center;
+    font-size: 15px;
+    padding-top: 5px;
+    text-align: center;
+}
+#am-pm{
+    font-size: 25px;
+    margin-top:15px; 
+    color:white;
+}
+#text-container{
+    font-size: 25px;
+    text-align: center;
+}
+#Dynamic-Block,#Dynamic-Block2,#Dynamic-Block3,#Dynamic-Block4{
+    margin-top: 10px;
+    height: 100%;
+    padding: 10px;
+    font-size: 10px;
+    border-radius: 10px;
+    color: #F25CFE;
+    text-align: center;
+    margin: 0px;
+}
+label{
+    font-size: 20px;
+
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width:1160px){
+    #wakeUpTimeSelector{
+        margin-left: 10px;
+    }
+    #lunchTimeSelector{
+        margin-left: 40px;
+    }
+    #napTimeSelector{
+        margin-left: 53px;
+    }
+    #nightTimeSelector{
+        margin-left: 42px;
+    }
+}
+@media screen and (max-width:990px){
+    #wakeUpTimeSelector,
+    #lunchTimeSelector,
+    #napTimeSelector,
+    #nightTimeSelector,label{
+        display: grid;
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width:580px){
+    label,.TimeSelector,option{
+        font-size: 15px;
+    }
+    #Image-container{
+        width: 100%;
+        height: 50%;
+    }
+    #text-container{
+        height: 15%;
+        width: 100%;
+        font-size: 15px;
+        padding-left: 0px;
+    }
+    #div1,#div2,#div3,#div4,.main-container{
+        margin-left: 4px;
+        margin-right: 0px;
+    }  
+    #digital-clock{
+        width: 100%;
+        height: 70%;
+    } 
+    h2{
+        font-size: 15px;
+    }
+    #clock1,#clock2,#clock3,#clock4,#clock5{
+      margin: 0px;
+      margin-top: 5px;
+    }
+    #am-pm{
+        font-size: 10px;
+    }
+    #clock5{
+        margin-left: 15px;
+    }
+    p{
+        margin-top: 2px;
+    }
+    .colon{
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    #time{
+        font-size: 10px;
+        margin-bottom: 25px;
+        margin-right: 20px;
+    }
+    #hours,#mins,#secs,p{
+        font-size: 10px;
+    }
+    label{
+        font-size: 10px;
+    }
+    .TimeSelector{
+        font-size: 10px;
+        width: 50%;
+    }
+    #clock-pic{
+        height: 80%;
+    }
+}
